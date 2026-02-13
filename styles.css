@@ -217,3 +217,182 @@ body {
 	border-radius: 5px;
 	box-shadow:0px 0px 10px black;
 }
+
+/* ========== RESPONSIVE STYLES ========== */
+
+/* Tablets and smaller desktops */
+@media screen and (max-width: 768px) {
+  .top-text {
+    font-size: 24px;
+    width: 85%;
+    padding: 8px;
+    top: 5%;
+  }
+
+  .bottom-text {
+    font-size: 16px;
+    top: 90%;
+    right: 50%;
+    transform: translateX(50%);
+    margin-right: 0;
+    text-align: center;
+    width: auto;
+    white-space: nowrap;
+  }
+
+  .button {
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+  }
+
+  #heart {
+    width: 80px;
+    height: 72px;
+  }
+
+  #heart:before,
+  #heart:after {
+    width: 40px;
+    height: 64px;
+    left: 40px;
+  }
+
+  #heart:after {
+    left: 0;
+  }
+
+  .sweetestheart-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sweetestheart {
+    width: 40px;
+    height: 40px;
+  }
+
+  .sweetestheart:before,
+  .sweetestheart:after {
+    width: 40px;
+    height: 40px;
+  }
+
+  .sweetestheart:before {
+    top: -20px;
+  }
+
+  .sweetestheart:after {
+    left: 20px;
+  }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+  .top-text {
+    font-size: 18px;
+    width: 90%;
+    padding: 8px;
+    top: 3%;
+    letter-spacing: 1px;
+  }
+
+  .bottom-text {
+    font-size: 14px;
+    top: 85%;
+    padding: 8px;
+  }
+
+  .button {
+    left: 50%;
+    top: 55%;
+    width: 40px;
+    height: 40px;
+  }
+
+  #heart {
+    width: 70px;
+    height: 63px;
+  }
+
+  #heart:before,
+  #heart:after {
+    width: 35px;
+    height: 56px;
+    left: 35px;
+    border-radius: 35px 35px 0 0;
+  }
+
+  #heart:after {
+    left: 0;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .sweetestheart-container {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sweetestheart {
+    width: 30px;
+    height: 30px;
+  }
+
+  .sweetestheart:before,
+  .sweetestheart:after {
+    width: 30px;
+    height: 30px;
+  }
+
+  .sweetestheart:before {
+    top: -15px;
+  }
+
+  .sweetestheart:after {
+    left: 15px;
+  }
+
+  .heart-container {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Very small phones */
+@media screen and (max-width: 320px) {
+  .top-text {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  .bottom-text {
+    font-size: 12px;
+  }
+
+  .sweetestheart-container {
+    width: 60px;
+    height: 60px;
+  }
+
+  .sweetestheart {
+    width: 25px;
+    height: 25px;
+  }
+
+  .sweetestheart:before,
+  .sweetestheart:after {
+    width: 25px;
+    height: 25px;
+  }
+
+  .sweetestheart:before {
+    top: -12.5px;
+  }
+
+  .sweetestheart:after {
+    left: 12.5px;
+  }
+}

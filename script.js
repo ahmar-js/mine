@@ -4,12 +4,7 @@ const divElement = document.querySelector('div'); // Replace 'div' with the ID o
 //   window.location.href = './pages/page1.html';
 // });
 
-divElement.addEventListener('click', function() {
-  // Delay the page loading by 2 seconds (2000 milliseconds)
-  setTimeout(function() {
-    window.location.href = 'page1.html'; // Replace './pages/page1.html' with the URL of your desired page
-  }, 2000); // Adjust the delay time as needed
-});
+// Navigation is now handled by the heart button click after animation completes
 
 document.addEventListener('DOMContentLoaded', function() {
   // Define the scaleCurve using mojs easing path
@@ -74,6 +69,10 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       timeline.play();
       this.classList.add('active');
+      // Navigate to next page after animation completes (900ms is the longest animation)
+      setTimeout(function() {
+        window.location.href = 'page1.html';
+      }, 5000);
     }
   });
 });
